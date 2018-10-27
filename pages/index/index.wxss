@@ -1,0 +1,147 @@
+/*index.wxss*/
+
+/*roundAvt*/
+
+.avt {
+  display: flex;
+  flex-direction: column;
+  z-index: 12;
+  padding-top: 80rpx;
+}
+
+.avt image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 2px solid #f2f2f2;
+}
+
+/*.headView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280rpx;
+  width: 750rpx;
+  position: relative;
+  z-index: 12
+}*/
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 500rpx;
+  height: 700rpx;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #dbdada;
+  position: absolute;
+  z-index: 10;
+  top: 300rpx;
+}
+
+.cont text {
+  color: white;
+  font-size: 36rpx;
+  line-height: 2rem;
+  text-align: left;
+  padding: 180rpx 0 0 50rpx;
+}
+
+.cont image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 20rpx 0 0 420rpx;
+}
+
+#userid {
+  padding-top: 60rpx;
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 30rpx;
+  margin-bottom: 50rpx;
+}
+
+/*helpCard*/
+
+.rm-help {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 650rpx 120rpx 0 0;
+  font-size: 10pt;
+  color: #bbb;
+}
+
+.rm-help-img {
+  width: 11pt;
+  height: 11pt;
+  margin: 0 5rpx;
+}
+
+.help {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(22, 22, 22, 0.35);
+}
+
+.box-hd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  border-bottom: 1px solid #fff;
+}
+
+.box-title {
+  font-size: 13pt;
+}
+
+.box-close {
+  position: absolute;
+  right: 20rpx;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx;
+}
+
+.box-bd {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx 40rpx 30rpx;
+}
+
+.help-q {
+  color: #999;
+  font-size: 11pt;
+  line-height: 200%;
+  margin-top: 5rpx;
+}
+
+.help-a {
+  font-size: 11pt;
+  text-indent: 1em;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-a text {
+  word-break: break-all;
+}

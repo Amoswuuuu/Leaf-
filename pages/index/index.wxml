@@ -1,0 +1,42 @@
+<view class='cardBox'>
+  <!--top-->
+  <view class='top'>
+    <image class='ico' src='/res/ico/search.png' />
+    <image class='logo' src='/res/img/logoa.png' />
+    <image class='ico' src='/res/ico/create.png' />
+  </view>
+  <!--card-->
+  <view class='card'>
+    <view class='avt'>
+      <image src='/res/img/avt.jpg' />
+    </view>
+    <view class='cont color1'>
+      <image src='/res/ico/share1.png' />
+      <text>最温柔的月光\n也敌不过\n你转瞬的回眸</text>
+      <text id='userid'>——匿名</text>
+    </view>
+  </view>
+  <!--help-->
+  <view class="rm-help" bindtap="showHelp">
+    <text>帮助</text>
+    <image class="rm-help-img" src="/res/ico/help1.png"></image>
+  </view>
+  <view class="help" id="help" wx:if="{{help_status}}" bindtap="tapHelp">
+    <view class="box">
+      <view class="box-hd">
+        <text class="box-title">帮助</text>
+        <image class="box-close" src="/res/ico/close.png" bindtap="hideHelp"></image>
+      </view>
+      <view class="box-bd">
+        <view class="help-q">1、为什么这句话会出现在热门？</view>
+        <view class="help-a">
+          <text>热门中的信息更新频率为一天一次，系统会根据算法自动筛选当日评论和点赞数综合较高的“匿名表白”消息放在第二天的热门卡片中。</text>
+        </view>
+        <view class="help-q">2、我该怎样做才能上热门？</view>
+        <view class="help-a">
+          <text>将你想上热门的“匿名表白”消息分享给身边的朋友，增加点赞和评论数会大大提高上热门的概率。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

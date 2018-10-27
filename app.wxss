@@ -1,0 +1,74 @@
+page {
+  background-color: #f2f2f2;
+}
+
+/*top*/
+
+.top {
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+
+.ico {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+
+.logo {
+  width: 129rpx;
+  height: 60rpx;
+  margin: 0 200rpx 0 240rpx;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50rpx;
+}
+
+/*colorSelect*/
+.color1 {
+  background: linear-gradient(45deg, #ec2f4b, #009fff)
+}
+
+.color2{
+  background: linear-gradient(45deg, #30e8bf, #ff8235)
+}
+
+.color3{
+  background: linear-gradient(45deg, #3494e6, #ec6ead)
+}
+
+.color4{
+   background: linear-gradient(45deg, #5433ff, #20bdff, #a5fecb);
+}
+
+.color5{
+  background: linear-gradient(45deg, #800080, #ffc0cb);
+}
+
+.color6{
+  background: linear-gradient(45deg, #fc00ff, #00dbde)
+}
+
+.color7{
+   background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8);
+}
+
+.tcolor1{
+  background-color: #ed556a;
+}
+
+.tcolor2{
+  background-color:#10aec2;
+}
+
+.tcolor3{
+  background-color:#8076a3;
+}

@@ -1,0 +1,67 @@
+/*find.wxss*/
+
+.line{
+  width: 700rpx;
+  height: 20rpx;
+}
+
+.infoBox {
+  background-color: white;
+  width: 700rpx;
+  height: 300rpx;
+  align-items: left;
+  margin: 30rpx 25rpx 0 25rpx;
+  display: flex;
+  flex-flow: column;
+}
+
+.infoBox image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.infoBox text {
+  width: 180rpx;
+  font-weight: 200;
+}
+
+.tag {
+  margin-left: 280rpx;
+  color: white;
+  border-radius: 5rpx;
+}
+
+.tag text{
+  padding: 0 10rpx 0 10rpx;
+}
+
+.row2 {
+  align-content: space-around;
+  padding: 20rpx 0 0 40rpx;
+  height: 120rpx;
+}
+
+#infoContent {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0 0 40rpx;
+  font-size: 28rpx;
+}
+
+.row3 {
+  padding: 20rpx 0 0 40rpx;
+  font-size: 28rpx;
+}
+
+.row3 image{
+  padding-left: 240rpx;
+}
+
+#like{
+  padding-left: 50rpx;
+}

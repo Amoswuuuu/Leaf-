@@ -1,0 +1,45 @@
+
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor":"white",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff"
+  },
+  "tabBar":{
+    "color": "#7f848a",
+    "selectedColor": "#4593D3",
+    "backgroundColor": "#fff",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "热门",
+        "iconPath": "res/ico/index.png",
+        "selectedIconPath": "res/ico/index@active.png"
+      },
+            {
+              "pagePath": "pages/find/find",
+              "text": "发现",
+              "iconPath": "res/ico/find.png",
+              "selectedIconPath": "res/ico/find@active.png"
+            },
+                  {
+                    "pagePath": "pages/user/user",
+                    "text": "我的",
+                    "iconPath": "res/ico/user.png",
+                    "selectedIconPath": "res/ico/user@active.png"
+                  }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  }
+}
