@@ -1,9 +1,9 @@
 <view class='cardBox'>
   <!--top-->
   <view class='top'>
-    <image class='ico' src='/res/ico/search.png' />
+    <image class='ico' src='/res/ico/search.png' bindtap='search' />
     <image class='logo' src='/res/img/logoa.png' />
-    <image class='ico' src='/res/ico/create.png' />
+    <image class='ico' src='/res/ico/create.png' bindtap='create' />
   </view>
   <!--card-->
   <view class='card'>

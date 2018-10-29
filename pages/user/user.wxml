@@ -5,25 +5,42 @@
     <image class='logo' src='/res/img/logoa.png' />
     <image class='ico' src='/res/ico/white.png' />
   </view>
-  <view class='cjCard'>
-  <view class='abox-name'>
-    <view class='avatarBox'>
-      <open-data class="avatar" type="userAvatarUrl" />
-    </view>
-    <view class='xm'>吴宗震　</view>
-  </view>
-  <view class='xh'>2016512976</view>
-  <view class='zy'>计算机科学与技术</view>
-  <view class='abox-info'>
-    <view class='abox-info-ctn'>
-      <view class='jqcj'>加权成绩：
-        <text>95.88</text>
+  <!--userCard-->
+  <view class='userCard'>
+    <view class='abox-name'>
+      <view class='avatarBox'>
+        <open-data class="avatar" type="userAvatarUrl" />
       </view>
-      <view class='yxxf'>已修学分：
-        <text>88</text>
+      <view class='userid'>吴宗震　</view>
+    </view>
+    <view class='xh'>2016512976</view>
+    <view class='abox-cnt'>
+      <view class='joinDays'>
+        <text>99 </text>天
+        <view>您已加入木叶汇华</view>
+      </view>
+      <view class='logoa'>
+        <image src='/res/img/logoa.png' />
       </view>
     </view>
-    <image class='logo' src='../../../img/pic/logo.png' />
   </view>
-</view>
+  <!--userList-->
+  <view class='userList'>
+    <i-cell-group>
+      <i-cell is-link url="/pages/core/help/help">
+        <i-icon type="activity" size="27" color="black" /> 使用帮助
+      </i-cell>
+      <i-cell bindtap='pay'>
+        <i-icon type="praise" size="27" color="black" /> 支持Leaf+
+      </i-cell>
+      <i-cell bindtap='copy'>
+        <i-icon type="group" size="27" color="black" /> 加入交流群
+      </i-cell>
+      <i-cell is-link url="/pages/core/about/about">
+        <i-icon type="prompt" size="27" color="black" /> 关于Leaf+
+      </i-cell>
+    </i-cell-group>
+  </view>
+    <i-button type="primary" size="default" open-type='share'><i-icon type="share" size="22" color="white" /> 分享Leaf+</i-button>
+  <i-button type="error" size="default"><i-icon type="undo" size="22" color="white" /> 退出登录</i-button>
 </view>

@@ -3,6 +3,7 @@ Page({
   /**
    * 页面的初始数据
    */
+  
   data: {
     help_status: false,
   },
@@ -20,6 +21,16 @@ Page({
     this.setData({
       'help_status': false
     });
+  },
+  search: function () {
+    wx.navigateTo({
+      url: '/pages/core/search/search',
+    })
+  },
+  create: function () {
+    wx.navigateTo({
+      url: '/pages/core/create/create',
+    })
   },
   /**
    * 生命周期函数--监听页面加载

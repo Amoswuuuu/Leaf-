@@ -1,0 +1,20 @@
+<view class='aboutTop'>
+  <i-icon type="prompt" size="38" color="white" class='icon' />
+  <text class='aboutTopTitle'>关于Leaf+</text>
+  <text>「你好，我是Leaf+。」</text>
+</view>
+<view class='aboutBox'>
+  <view class='ab_block1'>
+    <text>「Leaf+」诚挚欢迎公众号关联小程序，并期待与您合作。（APPID：wx038026e857746120）</text>
+  </view>
+  <view class='ab_block2'>
+    <text class='ab_t'>项目起源：</text>
+    <text>- Leaf+，又名木叶汇华，是河北师范大学汇华学院计算机专业学生独立开发的一个微信小程序。项目立项于2018年10月，经过一个月的紧张开发，目前Leaf+具有“匿名表白”、“失物招领”、“校园吐槽”等功能。项目愿景：做您身边的心情助手!</text>
+  </view>
+  <view class='ab_block3'>
+    <text class='ab_t'>技术支持：</text>
+    <text>- 小胖、支小推、Amos</text>
+    <text>- 目前Leaf+的功能还在开发中，如果您在使用过程中有更好的想法或者建议，欢迎您加入下方QQ群与我们进行交流。</text>
+    <text>- QQ群：942926364</text>
+  </view>
+</view>

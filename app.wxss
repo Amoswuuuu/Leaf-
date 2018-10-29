@@ -33,42 +33,43 @@ page {
 }
 
 /*colorSelect*/
+
 .color1 {
-  background: linear-gradient(45deg, #ec2f4b, #009fff)
+  background: linear-gradient(45deg, #ec2f4b, #009fff);
 }
 
-.color2{
-  background: linear-gradient(45deg, #30e8bf, #ff8235)
+.color2 {
+  background: linear-gradient(45deg, #30e8bf, #ff8235);
 }
 
-.color3{
-  background: linear-gradient(45deg, #3494e6, #ec6ead)
+.color3 {
+  background: linear-gradient(45deg, #3494e6, #ec6ead);
 }
 
-.color4{
-   background: linear-gradient(45deg, #5433ff, #20bdff, #a5fecb);
+.color4 {
+  background: linear-gradient(45deg, #5433ff, #20bdff, #a5fecb);
 }
 
-.color5{
+.color5 {
   background: linear-gradient(45deg, #800080, #ffc0cb);
 }
 
-.color6{
-  background: linear-gradient(45deg, #fc00ff, #00dbde)
+.color6 {
+  background: linear-gradient(45deg, #fc00ff, #00dbde);
 }
 
-.color7{
-   background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8);
+.color7 {
+  background: linear-gradient(45deg, #feac5e, #c779d0, #4bc0c8);
 }
 
-.tcolor1{
+.tcolor1 {
   background-color: #ed556a;
 }
 
-.tcolor2{
-  background-color:#10aec2;
+.tcolor2 {
+  background-color: #10aec2;
 }
 
-.tcolor3{
-  background-color:#8076a3;
+.tcolor3 {
+  background-color: #8076a3;
 }

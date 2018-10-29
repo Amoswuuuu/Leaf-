@@ -1,6 +1,15 @@
 /*find.wxss*/
 
-.line{
+.top {
+  position: fixed;
+  top: -20rpx;
+}
+
+.block{
+  height: 80rpx;
+}
+
+.line {
   width: 700rpx;
   height: 20rpx;
 }
@@ -10,9 +19,10 @@
   width: 700rpx;
   height: 300rpx;
   align-items: left;
-  margin: 30rpx 25rpx 0 25rpx;
+  margin: 20rpx 25rpx;
   display: flex;
   flex-flow: column;
+  border-radius: 10rpx;
 }
 
 .infoBox image {
@@ -31,7 +41,7 @@
   border-radius: 5rpx;
 }
 
-.tag text{
+.tag text {
   padding: 0 10rpx 0 10rpx;
 }
 
@@ -58,10 +68,10 @@
   font-size: 28rpx;
 }
 
-.row3 image{
+.row3 image {
   padding-left: 240rpx;
 }
 
-#like{
+#like {
   padding-left: 50rpx;
 }

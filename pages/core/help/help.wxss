@@ -1,0 +1,52 @@
+/*help.wxss*/
+
+.helpTop {
+  height: 240rpx;
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 24rpx;
+  letter-spacing: 5rpx;
+}
+
+.icon {
+  padding: 20rpx;
+}
+
+.helpTopTitle {
+  font-size: 36rpx;
+  letter-spacing: 10rpx;
+}
+
+.helpBox {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.helpBox text {
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  line-height: 150%;
+  justify-content: space-between;
+}
+
+.qstBox {
+  padding: 20rpx;
+}
+
+.h_title {
+  color: #5b86e5;
+  font-size: 36rpx;
+}
+
+.h_content {
+  padding: 15rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  line-height: 200%;
+  justify-content: space-between;
+}

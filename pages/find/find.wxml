@@ -1,10 +1,11 @@
 <view class='findBox'>
   <!--top-->
   <view class='top'>
-    <image class='ico' src='/res/ico/search.png' />
+    <image class='ico' src='/res/ico/search.png' bindtap='search' />
     <image class='logo' src='/res/img/logoa.png' />
-    <image class='ico' src='/res/ico/create.png' />
+    <image class='ico' src='/res/ico/create.png' bindtap='create' />
   </view>
+  <view class='block'></view>
   <!--infoList-->
   <block wx:for="{{info}}" wx:key="info">
     <view class='infoBox'>
@@ -28,4 +29,5 @@
       </view>
     </view>
   </block>
+  <i-load-more tip="我也是有底线的 _φ(❐_❐✧  " loading="{{ false }}" />
 </view>

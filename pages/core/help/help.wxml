@@ -1,0 +1,54 @@
+<view class='helpTop'>
+  <i-icon type="activity" size="38" color="white" class='icon' />
+  <text class='helpTopTitle'>使用帮助</text>
+  <text>「恭喜你打开Leaf+使用攻略」</text>
+</view>
+<view class='helpBox'>
+  <view class='qstBox'>
+    <view class='h_title'>
+      <text>1.如何才能上热门？</text>
+    </view>
+    <view class='h_content'>
+      <text>1.1 增加点赞和评论</text>
+      <text class='ctn'>将你想上热门的“匿名表白”消息分享给身边的朋友，增加点赞和评论数会大大提高上热门的概率。</text>
+      <text>1.2 更早地加入Leaf+</text>
+      <text class='ctn'>加入Leaf+的天数越多，上热门的概率也会相应提高</text>
+    </view>
+  </view>
+  <view class='qstBox'>
+    <view class='h_title'>
+      <text>2.如何更方便地使用Leaf+？</text>
+    </view>
+    <view class='h_content'>
+      <text>2.1 添加到桌面</text>
+      <text class='ctn'>安卓手机用户可以在Leaf+中依次点击右上角「···」>添加到桌面即可。</text>
+      <text>2.2 快速打开Leaf+</text>
+      <text class='ctn'>在微信首页时，直接下拉即可看到「最近打开的小程序」菜单，找到Leaf+点击即可进入。</text>
+    </view>
+  </view>
+  <view class='qstBox'>
+    <view class='h_title'>
+      <text>3.如何转发分享给朋友？</text>
+    </view>
+    <view class='h_content'>
+      <text>在Leaf+中，几乎每个页面都有转发分享按钮，点击即可转发分享。也可依次点击右上角「···」>转发，即可转发分享。Ps：转发热门页卡片会有小惊喜哟~</text>
+    </view>
+  </view>
+  <view class='qstBox'>
+    <view class='h_title'>
+      <text>4.如何找到Leaf+？</text>
+    </view>
+    <view class='h_content'>
+      <text>4.1 通过微信-发现打开</text>
+      <text class='ctn'>进入微信页面，点击底部导航栏中的发现，点击小程序，找到Leaf+即可打开。</text>
+      <text>4.2 通过微信-搜索打开</text>
+      <text class='ctn'>进入微信页面，点击搜索图标，输入Leaf+即可打开。</text>
+      <text>4.1 通过微信公众号打开</text>
+      <text class='ctn'>关注 “汇华社区” 公众号，点击详情页面，找到关联的小程序——Leaf+即可打开。</text>
+    </view>
+  </view>
+  <view class='h_content'>
+    同时，若您或有朋友在管理与汇华学院相关公众号，「Leaf+」诚挚欢迎公众号关联小程序，并期待与您合作。（APPID：wx038026e857746120）
+  </view>
+</view>
+ <i-button size="primary" open-type='share'>分享Leaf+</i-button>

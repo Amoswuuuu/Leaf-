@@ -1,40 +1,46 @@
-
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/find/find",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/core/create/create",
+    "pages/core/add/add",
+    "pages/core/help/help",
+    "pages/core/shareApp/shareApp",
+    "pages/core/about/about",
+    "pages/core/search/search"
+    
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor":"white",
+    "navigationBarBackgroundColor": "white",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
     "backgroundColor": "#fff"
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#7f848a",
     "selectedColor": "#4593D3",
     "backgroundColor": "#fff",
-    "list":[
+    "list": [
       {
         "pagePath": "pages/index/index",
         "text": "热门",
         "iconPath": "res/ico/index.png",
         "selectedIconPath": "res/ico/index@active.png"
       },
-            {
-              "pagePath": "pages/find/find",
-              "text": "发现",
-              "iconPath": "res/ico/find.png",
-              "selectedIconPath": "res/ico/find@active.png"
-            },
-                  {
-                    "pagePath": "pages/user/user",
-                    "text": "我的",
-                    "iconPath": "res/ico/user.png",
-                    "selectedIconPath": "res/ico/user@active.png"
-                  }
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "res/ico/find.png",
+        "selectedIconPath": "res/ico/find@active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "res/ico/user.png",
+        "selectedIconPath": "res/ico/user@active.png"
+      }
     ]
   },
   "networkTimeout": {
