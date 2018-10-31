@@ -76,7 +76,16 @@ Page({
       }
     ]
   },
-
+  search: function() {
+    wx.navigateTo({
+      url: '/pages/core/search/search',
+    })
+  },
+  create: function() {
+    wx.navigateTo({
+      url: '/pages/core/create/create',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

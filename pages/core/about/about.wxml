@@ -18,3 +18,4 @@
     <text>- QQ群：942926364</text>
   </view>
 </view>
+<i-button size="primary" open-type='share'>分享Leaf+</i-button>

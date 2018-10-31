@@ -1,9 +1,7 @@
 {
-  "window": {
-    "backgroundColor": "linear-gradient(45deg, #36d1dc, #5b86e5)"
-  },
   "usingComponents": {
     "i-button": "../../../dist/button/index",
     "i-icon": "../../dist/icon/index"
-  }
+  },
+  "navigationBarTitleText": "使用帮助"
 }

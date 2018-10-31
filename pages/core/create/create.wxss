@@ -1,0 +1,75 @@
+.createTop {
+  height: 240rpx;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 24rpx;
+  letter-spacing: 10rpx;
+}
+
+.icon {
+  padding: 20rpx;
+}
+
+.createTopTitle {
+  font-size: 36rpx;
+  letter-spacing: 10rpx;
+}
+
+.picker {
+  display: flex;
+  width: 750rpx;
+  height: 40rpx;
+  padding: 40rpx;
+  margin: 20rpx 0;
+  background-color: white;
+}
+
+.pType {
+  display: flex;
+  width: 750rpx;
+  height: 40rpx;
+}
+
+.pType image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.tLabel{
+  display: inline-block;
+  width: 85%;
+}
+
+.tIco{
+  display: inline-block;
+  width: 15%;
+}
+
+.tLabel {
+  font-size: 28rpx;
+  color: #0f1423;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  height: 320rpx;
+  background-color: white;
+  font-size: 32rpx;
+}
+
+.textBox textarea {
+  padding: 20rpx 20rpx 0 40rpx;
+}
+
+.textBox text {
+  text-align: right;
+  color: rgb(147, 147, 147);
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+}
+

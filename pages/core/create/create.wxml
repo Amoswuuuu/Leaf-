@@ -1,0 +1,28 @@
+<!--createTop-->
+<view class='createTop'>
+  <i-icon type="add" size="38" color="white" class='icon' />
+  <text class='createTopTitle'>新建内容</text>
+  <text>「记录你的此时此刻」</text>
+</view>
+<!--createBox-->
+<view class='createBox'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='picker'>
+    <view class='pType'>
+      <view class='tLabel'>{{array[index]}}</view>
+      <view class='tIco'>
+        <image src='/res/ico/pulldown.png' />
+      </view>
+    </view>
+  </picker>
+  <view class='textBox'>
+    <textarea placeholder='写下你此时此刻的想法吧~' maxlength="200" bindinput="bindWordLimit" />
+    <text class='wordLimit ff-hv'>{{currentNoteLen|0}}/200</text>
+  </view>
+  <i-cell title="是否匿名">
+    <i-switch value="{{switch1}}" size="large" bind:change="onChange" slot="footer">
+      <view slot="open">开启</view>
+      <view slot="close">关闭</view>
+    </i-switch>
+  </i-cell>
+  <i-button bind:click="handleClick" type="primary" shape="circle" size="small">发送</i-button>
+</view>

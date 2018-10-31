@@ -5,6 +5,7 @@
     "pages/user/user",
     "pages/core/create/create",
     "pages/core/add/add",
+    "pages/core/share/share",
     "pages/core/help/help",
     "pages/core/shareApp/shareApp",
     "pages/core/about/about",
@@ -15,7 +16,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "white",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundColor": "#fff"
   },
   "tabBar": {
