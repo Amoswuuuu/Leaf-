@@ -7,7 +7,7 @@
     "pages/core/add/add",
     "pages/core/share/share",
     "pages/core/help/help",
-    "pages/core/shareApp/shareApp",
+    "pages/core/userCtr/userCtr",
     "pages/core/about/about",
     "pages/core/search/search"
     

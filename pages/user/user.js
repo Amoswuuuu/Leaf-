@@ -40,6 +40,11 @@ Page({
       }
     })
   },
+  avatar() {
+    wx.navigateTo({
+      url: '/pages/core/userCtr/userCtr',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

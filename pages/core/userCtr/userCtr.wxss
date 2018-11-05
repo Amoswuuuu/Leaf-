@@ -1,0 +1,70 @@
+.userCtrTop {
+  height: 240rpx;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 24rpx;
+  letter-spacing: 10rpx;
+}
+
+.icon {
+  padding: 20rpx;
+}
+
+.userCtrTitle {
+  font-size: 36rpx;
+  letter-spacing: 10rpx;
+}
+
+.userinfoBox {
+  display: flex;
+  flex-flow: column;
+  margin: 20rpx 0;
+  background: white;
+  font-size: 28rpx;
+}
+
+.avatarBox {
+  display: flex;
+  flex-flow: row;
+  width: 750rpx;
+  height: 140rpx;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 20rpx 0 0 20rpx;
+}
+
+.nickname{
+  padding: 40rpx 0 0 280rpx;
+  font-size: 36rpx;
+}
+
+.userCont {
+  display: flex;
+  flex-flow: row;
+}
+
+.joinDate .userid .userName{
+  display: flex;
+  flex-flow: row;
+}
+
+.userid {
+}
+
+.userName {
+}
+
+.usrInfoListBox {
+}
+
+.usrInfoList {
+}
+
+.del {
+}
