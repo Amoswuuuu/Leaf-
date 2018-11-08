@@ -22,7 +22,6 @@
   display: flex;
   flex-flow: column;
   margin: 20rpx 0;
-  background: white;
   font-size: 28rpx;
 }
 
@@ -31,6 +30,8 @@
   flex-flow: row;
   width: 750rpx;
   height: 140rpx;
+  background: white;
+  margin: 20rpx 0;
 }
 
 .avatar {
@@ -39,32 +40,88 @@
   padding: 20rpx 0 0 20rpx;
 }
 
-.nickname{
-  padding: 40rpx 0 0 280rpx;
-  font-size: 36rpx;
+.nickname {
+  padding: 50rpx 0 0 280rpx;
+  font-size: 32rpx;
 }
 
 .userCont {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
+  background: white;
+  margin-top: 20rpx;
 }
 
-.joinDate .userid .userName{
+.joinDate {
   display: flex;
   flex-flow: row;
+  padding: 20rpx 0 0 20rpx;
+}
+
+.joinDate view {
+  padding-left: 10rpx;
+}
+
+#date{
+  padding-left: 220rpx;
+}
+
+#usrid{
+  padding-left: 240rpx;
+}
+
+#btn{
+  padding-left: 270rpx;
+  color: #0072ff;
 }
 
 .userid {
+  display: flex;
+  flex-flow: row;
+  background: white;
+  margin: 20rpx 0;
+  padding: 20rpx 0 0 20rpx;
+}
+
+.userid view{
+  padding-left: 10rpx;
 }
 
 .userName {
+  display: flex;
+  flex-flow: row;
+  background: white;
+  padding: 20rpx 0 20rpx 20rpx;
+}
+
+.userName view{
+  padding-left: 10rpx;
 }
 
 .usrInfoListBox {
+  background: white;
+  margin: 20rpx 0;
+  font-size: 34rpx;
+  padding: 20rpx 0 0 35rpx;
 }
 
-.usrInfoList {
+.other{
+  display: flex;
+  flex-flow: row;
+  color:#636e72;
 }
 
-.del {
+.other view{
+  padding: 20rpx;
+  font-size: 28rpx;
 }
+
+#tag{
+  padding-left: 0;
+}
+
+#del {
+  color: #0072ff;
+  padding-left: 80rpx;
+}
+

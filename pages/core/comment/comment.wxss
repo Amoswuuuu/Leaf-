@@ -1,0 +1,90 @@
+.commentBox{
+  display: flex;
+  flex-flow: column;
+}
+
+.detail {
+  position: fixed;
+  top: 30rpx;
+  display: flex;
+  flex-flow: column;
+  height: 450rpx;
+  width: 700rpx;
+  margin: 0 30rpx 20rpx 30rpx;
+  border-radius: 10rpx;
+  line-height: 200%;
+  font-size: 32rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
+}
+
+.detail text {
+  color: white;
+  font-size: 36rpx;
+  line-height: 2rem;
+  text-align: left;
+  padding: 50rpx 0 0 150rpx;
+}
+
+#userid {
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 80rpx;
+}
+
+.cmt{
+  padding-top: 500rpx;
+  padding-bottom: 120rpx;
+}
+
+.commentList {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  margin: 20rpx 30rpx 0 30rpx;
+  font-size: 36rpx;
+  height: 200rpx;
+}
+
+.commentList text{
+  padding: 40rpx 0 20rpx 70rpx;
+}
+
+.commentList image{
+  width: 38rpx;
+  height: 38rpx;
+}
+
+#cmtid{
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+
+.icoBox{
+  display: flex;
+  flex-flow: row;
+  padding: 20rpx 0 20rpx 480rpx;
+}
+
+.sendBox{
+  position: fixed;
+  bottom: 0;
+  padding-left: 70rpx;
+  background-color: white;
+  height: 100rpx;
+  width: 750rpx;
+  border-top: 1px solid #636e72;
+}
+
+.sendComment{
+  display: flex;
+  flex-flow: row;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.sendBtn{
+  border-radius: 98rpx;
+  background-color: rgb(72, 147, 214);
+  padding-left: 90rpx;
+  color: white;
+}

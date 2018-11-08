@@ -8,7 +8,7 @@
   <view class='block'></view>
   <!--infoList-->
   <block wx:for="{{info}}" wx:key="info">
-    <view class='infoBox'>
+    <view class='infoBox' bindtap='comment'>
       <view class='line {{item.color}}'></view>
       <view class='row1'>
         <image src='/res/ico/my.png' />
@@ -24,7 +24,7 @@
         <text>{{item.date}}</text>
         <image src='/res/ico/comment.png' />
         <text>{{item.comment}}</text>
-        <image src='/res/ico/like.png' id='like' />
+        <image src='/res/ico/like.png' id='like' bindtap='#' />
         <text>{{item.like}}</text>
       </view>
     </view>

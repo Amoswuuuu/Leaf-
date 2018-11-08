@@ -32,7 +32,7 @@
   width: 500rpx;
   height: 700rpx;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px #dbdada;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
   position: absolute;
   z-index: 10;
   top: 300rpx;

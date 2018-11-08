@@ -13,17 +13,19 @@
   <view class='userCont'>
     <view class='joinDate'>
       <i-icon type="time" size="27" color="black" />
-      <view>2018-10-25</view>
+      <view>注册时间</view>
+      <view id='date'>2018-10-25</view>
     </view>
     <view class='userid'>
       <i-icon type="barrage" size="27" color="black" />
-      <view>2018000000</view>
+      <view>UserID</view>
+      <view id='usrid'>2018000000</view>
     </view>
   </view>
   <view class='userName'>
     <i-icon type="businesscard" size="27" color="black" />
     <view>Amos</view>
-    <view>修改</view>
+    <view id='btn' bindtap='#'>修改</view>
   </view>
 </view>
 <!--usrInfoList-->
@@ -32,8 +34,10 @@
     <view class='htyinfo'>
       最温柔的月光，也敌不过你，转瞬的回眸
     </view>
-    <view class='tag'>匿名表白</view>
-    <view class='sendTime'>10-25 22:22</view>
-    <view class='del'>删除</view>
+    <view class='other'>
+      <view id='tag'>Tag: 匿名表白</view>
+      <view class='sendTime'>Time: 10-25 22:22</view>
+      <view id='del' bindtap='#'>删除</view>
+    </view>
   </view>
 </view>

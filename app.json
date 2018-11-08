@@ -9,8 +9,10 @@
     "pages/core/help/help",
     "pages/core/userCtr/userCtr",
     "pages/core/about/about",
-    "pages/core/search/search"
-    
+    "pages/core/search/search",
+    "pages/core/comment/comment",
+    "pages/core/authorize/authorize",
+    "pages/core/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

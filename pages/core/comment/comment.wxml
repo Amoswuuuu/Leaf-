@@ -1,0 +1,49 @@
+<view class='commentBox'>
+  <view class='detail color1'>
+    <text>最温柔的月光\n也敌不过\n你转瞬的回眸</text>
+    <text id='userid'>——匿名</text>
+  </view>
+  <view class='cmt'>
+    <view class='commentList'>
+      <text>说的真好~</text>
+      <view class='icoBox'>
+        <image src='/res/ico/my.png' />
+        <view id='cmtid'>——匿名</view>
+      </view>
+    </view>
+    <view class='commentList'>
+      <text>说的真好~</text>
+      <view class='icoBox'>
+        <image src='/res/ico/my.png' />
+        <view id='cmtid'>——匿名</view>
+      </view>
+    </view>
+    <view class='commentList'>
+      <text>说的真好~</text>
+      <view class='icoBox'>
+        <image src='/res/ico/my.png' />
+        <view id='cmtid'>——匿名</view>
+      </view>
+    </view>
+    <view class='commentList'>
+      <text>说的真好~</text>
+      <view class='icoBox'>
+        <image src='/res/ico/my.png' />
+        <view id='cmtid'>——匿名</view>
+      </view>
+    </view>
+    <view class='commentList'>
+      <text>说的真好~</text>
+      <view class='icoBox'>
+        <image src='/res/ico/my.png' />
+        <view id='cmtid'>——匿名</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='sendBox'>
+  <view class='sendComment'>
+    <input placeholder='添加评论...' confirm-type='send' cursor-spacing='10rpx' />
+    <button class='sendBtn' size='mini'>发送</button>
+  </view>
+</view>
