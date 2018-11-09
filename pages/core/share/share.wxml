@@ -1,3 +1,0 @@
-<view class='canvas'>
-  <canvas canvas-id='shareCanvas' style='border-radius:10rpx;'></canvas>
-</view>

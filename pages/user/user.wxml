@@ -46,6 +46,6 @@
   </view>
   <i-button type="primary" size="default" open-type='share'>
     <i-icon type="share" size="22" color="white" /> 分享Leaf+</i-button>
-  <i-button type="error" size="default">
-    <i-icon type="undo" size="22" color="white" /> 退出登录</i-button>
+  <!--<i-button type="error" size="default">
+    <i-icon type="undo" size="22" color="white" /> 退出登录</i-button>-->
 </view>

@@ -1,3 +1,4 @@
+ <form bindsubmit="formSubmit" >
 <view class='loginBox'>
   <view class='bg'>
     <view class='row1'>
@@ -9,6 +10,7 @@
   <view class='loginForm'>
     <input class='username' name='username' placeholder="学号" maxlength='10' cursor-spacing='10rpx' focus='true' type='number' />
     <input class='password' name='password' placeholder="学分制系统密码" password='true' maxlength='18' cursor-spacing='10rpx' confirm-type='登录' />
-    <button class='btn1' form-type='submit' bindtap='login'>登 录</button>
+    <button class='btn1' form-type='submit' >登 录</button>
   </view>
 </view>
+</form>

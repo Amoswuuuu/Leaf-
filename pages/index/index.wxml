@@ -40,3 +40,4 @@
     </view>
   </view>
 </view>
+<canvas class='shareCanvas' canvas-id='shareCanvas' disable-scroll='true' />

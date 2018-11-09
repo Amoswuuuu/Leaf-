@@ -1,6 +1,5 @@
 <!--pages/core/authorize/authorize.wxml-->
-<view class='authorize'>
-<image src='/res/img/start.jpg'></image>
-  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
-  <view wx:else>请升级微信版本</view>
+<view class='authorize'>                                
+  <button class='btnlogin' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">让我们开始吧！</button>
+
 </view>

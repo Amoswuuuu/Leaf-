@@ -1,3 +1,4 @@
+var app = getApp().globalData4655645
 Page({
 
   /**
@@ -7,10 +8,10 @@ Page({
 
   },
 
-  login() {
-    wx.redirectTo({
-      url: '/pages/index/index',
-    })
+  formSubmit: function (e) {
+      wx.switchTab({
+        url: '../../index/index',
+      })
   },
   /**
    * 生命周期函数--监听页面加载

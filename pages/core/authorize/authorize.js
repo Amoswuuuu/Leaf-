@@ -1,27 +1,50 @@
 //js
+var app = getApp().globalData
 Page({
   data: {
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+
   },
-  onLoad: function() {
-    // 查看是否授权
-    wx.getSetting({
-      success: function(res) {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function(res) {
-              console.log(res.userInfo)
-              wx.redirectTo({
-                url: '/pages/core/login/login',
-              })
-            }
-          })
-        }
-      }
-    })
+  onShow: function() {
+    
   },
   bindGetUserInfo: function(e) {
-    console.log(e.detail.userInfo)
+    wx.getSetting({
+      success: (response) => {
+        console.log(typeof (response.authSetting))
+        for (var i in response.authSetting)
+        {
+          console.log(response.authSetting[i])
+          var t=response.authSetting[i]
+        }
+        console.log(typeof(t))
+        if (t==true)
+        {
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res)
+              console.log(res.userInfo.nickName)
+              app.nicename = res.userInfo.nickName
+             app.url= res.userInfo.avatarUrl
+             app. gender = res.userInfo.gender ,
+                wx.redirectTo({
+                  url: '/pages/core/login/login',
+           })
+            },
+          })
+        }
+        else{
+           wx.showModal({
+             content: '亲，你好像点错了~',
+              showCancel:false
+           })
+        }
+        
+      },
+     
+    })
+
+
   }
+       
 })
+

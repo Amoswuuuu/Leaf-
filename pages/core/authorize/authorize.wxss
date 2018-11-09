@@ -1,4 +1,20 @@
 /* pages/core/authorize/authorize.wxss */
-.authorize{
 
+page {
+  height: 100%;
+  background: url(http://gxfwz36524.com/auth.png);
+  width: 750rpx;
+}
+
+.authorize {
+  width: 750rpx;
+  margin: 0 auto;
+}
+
+.btnlogin {
+  background-color: #0072ff;
+  color: white;
+  position: absolute;
+  left: 30%;
+  bottom: 100rpx;
 }

@@ -54,6 +54,60 @@
   width: 560rpx;
   border-radius: 10rpx;
   box-shadow: 0rpx 5rpx 70rpx -10rpx #0072ff;
+  animation: login 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes login {
+  0% {
+    left: -650rpx;
+    top: 290rpx;
+  }
+
+  10% {
+    left: -576rpx;
+    top: 290rpx;
+  }
+
+  20% {
+    left: -502rpx;
+    top: 290rpx;
+  }
+
+  30% {
+    left: -428rpx;
+    top: 290rpx;
+  }
+
+  40% {
+    left: -354rpx;
+    top: 290rpx;
+  }
+
+  50% {
+    left: -280rpx;
+    top: 290rpx;
+  }
+
+  60% {
+    left: -206rpx;
+    top: 290rpx;
+  }
+
+  70% {
+    left: -132rpx;
+    top: 290rpx;
+  }
+
+  80% {
+    left: -58rpx;
+    top: 290rpx;
+  }
+
+  100% {
+    left: 90rpx;
+    top: 290rpx;
+  }
 }
 
 .username {

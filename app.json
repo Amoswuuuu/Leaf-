@@ -1,18 +1,17 @@
 {
   "pages": [
+    "pages/core/authorize/authorize",
+    "pages/core/login/login",
     "pages/index/index",
     "pages/find/find",
     "pages/user/user",
     "pages/core/create/create",
     "pages/core/add/add",
-    "pages/core/share/share",
     "pages/core/help/help",
     "pages/core/userCtr/userCtr",
     "pages/core/about/about",
     "pages/core/search/search",
-    "pages/core/comment/comment",
-    "pages/core/authorize/authorize",
-    "pages/core/login/login"
+    "pages/core/comment/comment"
   ],
   "window": {
     "backgroundTextStyle": "light",
