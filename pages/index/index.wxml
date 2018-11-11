@@ -11,7 +11,7 @@
       <image src='/res/img/avt.jpg' />
     </view>
     <view class='cont color1'>
-      <image src='/res/ico/share1.png' bindtap='share' />
+      <!--<image src='/res/ico/share1.png' bindtap='share' />-->
       <text>最温柔的月光\n也敌不过\n你转瞬的回眸</text>
       <text id='userid'>——匿名</text>
     </view>
@@ -40,4 +40,3 @@
     </view>
   </view>
 </view>
-<canvas class='shareCanvas' canvas-id='shareCanvas' disable-scroll='true' />

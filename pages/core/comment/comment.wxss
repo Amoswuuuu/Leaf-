@@ -1,28 +1,29 @@
-.commentBox{
+.commentBox {
   display: flex;
   flex-flow: column;
 }
 
 .detail {
-  position: fixed;
-  top: 30rpx;
   display: flex;
   flex-flow: column;
   height: 450rpx;
+  min-height: 450rpx;
+  max-height: 750rpx;
   width: 700rpx;
-  margin: 0 30rpx 20rpx 30rpx;
+  margin: 30rpx 30rpx 20rpx 30rpx;
   border-radius: 10rpx;
   line-height: 200%;
   font-size: 32rpx;
   box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
 }
 
+
 .detail text {
   color: white;
   font-size: 36rpx;
   line-height: 2rem;
   text-align: left;
-  padding: 50rpx 0 0 150rpx;
+  padding: 50rpx 100rpx 0 100rpx;
 }
 
 #userid {
@@ -31,8 +32,7 @@
   padding-right: 80rpx;
 }
 
-.cmt{
-  padding-top: 500rpx;
+.cmt {
   padding-bottom: 120rpx;
 }
 
@@ -45,27 +45,27 @@
   height: 200rpx;
 }
 
-.commentList text{
+.commentList text {
   padding: 40rpx 0 20rpx 70rpx;
 }
 
-.commentList image{
+.commentList image {
   width: 38rpx;
   height: 38rpx;
 }
 
-#cmtid{
+#cmtid {
   font-size: 28rpx;
   padding-left: 10rpx;
 }
 
-.icoBox{
+.icoBox {
   display: flex;
   flex-flow: row;
   padding: 20rpx 0 20rpx 480rpx;
 }
 
-.sendBox{
+.sendBox {
   position: fixed;
   bottom: 0;
   padding-left: 70rpx;
@@ -75,14 +75,14 @@
   border-top: 1px solid #636e72;
 }
 
-.sendComment{
+.sendComment {
   display: flex;
   flex-flow: row;
   padding-top: 20rpx;
   font-size: 30rpx;
 }
 
-.sendBtn{
+.sendBtn {
   border-radius: 98rpx;
   background-color: rgb(72, 147, 214);
   padding-left: 90rpx;

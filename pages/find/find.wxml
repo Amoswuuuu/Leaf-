@@ -12,7 +12,7 @@
       <view class='line {{item.color}}'></view>
       <view class='row1'>
         <image src='/res/ico/my.png' />
-        <text>{{item.id}}</text>
+        <text id='idText'>{{item.id}}</text>
         <view class='tag {{item.tcolor}}'>
           <text>{{item.tag}}</text>
         </view>
