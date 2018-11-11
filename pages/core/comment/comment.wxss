@@ -6,7 +6,7 @@
 .detail {
   display: flex;
   flex-flow: column;
-  height: 450rpx;
+  height: 600rpx;
   min-height: 450rpx;
   max-height: 750rpx;
   width: 700rpx;

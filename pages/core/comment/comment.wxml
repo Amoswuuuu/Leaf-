@@ -43,7 +43,7 @@
 </view>
 <view class='sendBox'>
   <view class='sendComment'>
-    <input placeholder='添加评论...' confirm-type='send' cursor-spacing='10rpx' />
+    <input placeholder='添加评论...' confirm-type='send' cursor-spacing='10rpx' maxlength='40' />
     <button class='sendBtn' size='mini'>发送</button>
   </view>
 </view>
