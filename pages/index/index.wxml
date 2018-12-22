@@ -1,19 +1,21 @@
+<!-- index.wxml -->
+<!--top-->
+<view class='top'>
+  <image class='ico' src='/res/ico/search.png' bindtap='search' />
+  <image class='logo' src='/res/img/logoa.png' />
+  <image class='ico' src='/res/ico/create.png' bindtap='create' />
+</view>
+<i-notice-bar icon="systemprompt" loop closable="true" speed="1500">{{notice}}</i-notice-bar>
 <view class='cardBox'>
-  <!--top-->
-  <view class='top'>
-    <image class='ico' src='/res/ico/search.png' bindtap='search' />
-    <image class='logo' src='/res/img/logoa.png' />
-    <image class='ico' src='/res/ico/create.png' bindtap='create' />
-  </view>
   <!--card-->
   <view class='card'>
     <view class='avt'>
-      <image src='/res/img/avt.jpg' />
+      <image src='{{image}}' />
     </view>
     <view class='cont color1'>
-      <!--<image src='/res/ico/share1.png' bindtap='share' />-->
-      <text>最温柔的月光\n也敌不过\n你转瞬的回眸</text>
-      <text id='userid'>——匿名</text>
+      <image src='/res/ico/share1.png' bindtap='share' />
+      <text>{{maintext}}</text>
+      <text id='userid'>——{{name}}</text>
     </view>
   </view>
   <!--help-->
@@ -30,7 +32,7 @@
       <view class="box-bd">
         <view class="help-q">1、为什么这句话会出现在热门？</view>
         <view class="help-a">
-          <text>热门中的信息更新频率为一天一次，系统会根据算法自动筛选当日评论和点赞数综合较高的“匿名表白”消息放在第二天的热门卡片中。</text>
+          <text>热门中的信息更新频率为一天一次，系统会根据算法自动筛选当日评论和点赞数综合较高的“昵称表白”消息放在第二天的热门卡片中。</text>
         </view>
         <view class="help-q">2、我该怎样做才能上热门？</view>
         <view class="help-a">
@@ -40,3 +42,4 @@
     </view>
   </view>
 </view>
+<!-- <canvas class='shareCanvas' canvas-id='shareCanvas' disable-scroll='true' /> -->

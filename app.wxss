@@ -73,3 +73,15 @@ page {
 .tcolor3 {
   background-color: #8076a3;
 }
+
+.tcolor4 {
+  background-color: #2294e5;
+}
+
+.tcolor5 {
+  background-color: #f77b00;
+}
+
+.tcolor6 {
+  background-color: #7DCFB6;
+}

@@ -1,14 +1,29 @@
+/*comment.wxss*/
+
 .commentBox {
   display: flex;
   flex-flow: column;
 }
 
+swiper {
+  width: 700rpx;
+  height: 400rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.scroll-view {
+  margin: 30rpx 30rpx 0 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
+}
+
 .detail {
   display: flex;
   flex-flow: column;
-  height: 600rpx;
-  min-height: 450rpx;
-  max-height: 750rpx;
   width: 700rpx;
   margin: 30rpx 30rpx 20rpx 30rpx;
   border-radius: 10rpx;
@@ -17,6 +32,35 @@
   box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
 }
 
+.hint-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ellipsis {
+  -webkit-line-clamp: 3; /* 最多显示3行*/
+  opacity: 0; /* 透明度0*/
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0; /* 全部显示*/
+  opacity: 1; /* 不透明*/
+}
+
+.bg-ellipsis {
+  height: 65rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.img-ellipsis {
+  width: 60rpx;
+  height: 60rpx;
+  padding-bottom: 20rpx;
+}
 
 .detail text {
   color: white;
@@ -30,10 +74,6 @@
   font-size: 28rpx;
   text-align: right;
   padding-right: 80rpx;
-}
-
-.cmt {
-  padding-bottom: 120rpx;
 }
 
 .commentList {
@@ -57,6 +97,19 @@
 #cmtid {
   font-size: 28rpx;
   padding-left: 10rpx;
+  font-weight: 500;
+  /* 控制宽度 */
+  width: 200rpx;
+  max-width: 200rpx;
+  /* 控制显示的行数 */
+  max-height: 150rpx;
+  line-height: 50rpx;
+  /* 显示多行 */
+  display: -webkit-box;
+  overflow: hidden;
+  /* 1为显示的行数 */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .icoBox {
@@ -87,4 +140,8 @@
   background-color: rgb(72, 147, 214);
   padding-left: 90rpx;
   color: white;
+}
+
+.line {
+  height: 120rpx;
 }

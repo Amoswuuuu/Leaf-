@@ -1,3 +1,5 @@
+/* create.wxss */
+
 .createTop {
   height: 240rpx;
   background: linear-gradient(45deg, #00c6ff, #0072ff);
@@ -9,6 +11,33 @@
   letter-spacing: 10rpx;
 }
 
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: #0072ff;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnBox {
+  margin: 20rpx 0;
+}
+
+.btn2 {
+  background-color: white;
+  font-size: 32rpx;
+  border-radius: 0;
+  height: 80rpx;
+}
+
+.btn2::after {
+  border: 0;
+}
+
 .icon {
   padding: 20rpx;
 }
@@ -16,6 +45,18 @@
 .createTopTitle {
   font-size: 36rpx;
   letter-spacing: 10rpx;
+}
+
+.bot {
+  border-top: 0.1ch solid #636e72;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  color: white;
+  background-color: #0072ff;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
 }
 
 .picker {
@@ -38,12 +79,12 @@
   height: 36rpx;
 }
 
-.tLabel{
+.tLabel {
   display: inline-block;
   width: 85%;
 }
 
-.tIco{
+.tIco {
   display: inline-block;
   width: 15%;
 }
@@ -73,3 +114,34 @@
   padding-bottom: 20rpx;
 }
 
+.question-images-area {
+  padding: 40rpx 0;
+}
+
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+
+.q-image-wrap {
+  width: 31%;
+  margin-right: 10rpx;
+}
+
+.q-image {
+  flex: 1;
+  height: 200rpx;
+  width: 100%;
+}
+
+.q-image-remover {
+  text-align: center;
+  font-size: 32rpx;
+}

@@ -1,3 +1,5 @@
+// search.js
+
 Page({
 
   /**
@@ -81,7 +83,7 @@ Page({
     historydata: [],
     historydatashow: false,
     searchresult: false,
-    inputsearch: "", //输入框内的值,
+    text: "", //输入框内的值,
   },
   /*输入框输入后触发，用于联想搜索和切换取消确认*/
   inputoperation: function(e) {
@@ -106,11 +108,11 @@ Page({
     })
   },
   /*取消搜索 */
-  cancelsearch: function() {
-    wx.navigateBack({
-      url: '../index/index'
-    })
-  },
+  // cancelsearch: function() {
+  //   wx.navigateTo({
+  //     url: 'searchfind',
+  //   })
+  // },
   /*换一批操作 */
   changeother: function() {
     this.setData({
@@ -119,37 +121,49 @@ Page({
   },
   /*点击搜索按钮触发*/
   searchbegin: function() {
-    let that = this
-    // wx.getStorage({
-    //   key: 'historydata',
-    //   success: function (res) {
-    //     that.setData({
-    //       historydata: res.data
-    //     })
-    //   }
-    // })
+    var text = ""
+    var that = this
+    console.log("555")
+    console.log(this.data.searchvalue)
+
     wx.setStorage({
       key: "historydata",
-      data: that.data.historydata.concat(that.data.searchvalue)
+      data: that.data.historydata.concat(that.data.text)
     })
     console.log(that.data.historydata)
     //请求数据调页面
-    // wx.navigateTo({
-    //   url: '../detail/detail'
-    // })
-    this.setData({
-      searchresult: true,
+    wx.navigateTo({
+      url: 'searchfind?content=' + this.data.text
     })
 
-
+  },
+  gotodetail: function(e) {
+    var that = this;
+    that.setData({
+      text: e.currentTarget.id
+    })
   },
   //点击进入详情页
-  gotodetail: function() {
-    wx.navigateTo({
-      url: '../detail/detail'
+
+  clear: function(e) {
+    wx.clearStorage();
+    wx.clearStorageSync();
+    this.setData({
+      historydata: ""
     })
   },
 
+  ch: function(e) {
+    var that = this
+    let text = that.data.searchvalue
+    console.log(that.data)
+    console.log(e.currentTarget.id)
+
+    console.log(that.data.searchvalue)
+    that.setData({
+      text: e.currentTarget.id
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -179,7 +193,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    var that = this
+    wx.getStorage({
+      key: 'historydata',
+      success: function(res) {
+        that.setData({
+          historydata: res.data
+        })
+      }
+    })
   },
 
   /**

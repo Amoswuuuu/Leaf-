@@ -1,3 +1,5 @@
+<!-- create.wxml -->
+
 <!--createTop-->
 <view class='createTop'>
   <i-icon type="add" size="38" color="white" class='icon' />
@@ -5,8 +7,8 @@
   <text>「记录你的此时此刻」</text>
 </view>
 <!--createBox-->
-<view class='createBox'>
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='picker'>
+<form class='createBox' bindsubmit="formSubmit">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='picker' name="pack">
     <view class='pType'>
       <view class='tLabel'>{{array[index]}}</view>
       <view class='tIco'>
@@ -15,14 +17,29 @@
     </view>
   </picker>
   <view class='textBox'>
-    <textarea placeholder='写下你此时此刻的想法吧~' maxlength="200" bindinput="bindWordLimit" />
+    <textarea placeholder='写下你此时此刻的想法吧~' maxlength="200" bindinput="bindWordLimit" name='text' />
     <text class='wordLimit ff-hv'>{{currentNoteLen|0}}/200</text>
   </view>
-  <i-cell title="是否匿名">
-    <i-switch value="{{switch1}}" size="large" bind:change="onChange" slot="footer">
-      <view slot="open">开启</view>
+  <view class='btnBox'>
+    <button class='btn2' bindtap="chooseImage" 
+    wx:if="{{images.length < 3}}">添加图片</button>
+  </view>
+  <i-cell title="是否匿名" name="niming">
+    <i-switch value="{{switch1}}" size="large" bind:change="onChange" slot="footer" name="switch">
+      <view slot="open" name="open">开启</view>
       <view slot="close">关闭</view>
     </i-switch>
   </i-cell>
-  <i-button bind:click="handleClick" type="primary" shape="circle" size="small">发送</i-button>
-</view>
+  <view class="question-images">
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="q-image-wrap">
+        <!-- 图片缩略图  -->
+        <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+        <!-- 移除图片的按钮  -->
+        <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">删除</view>
+      </view>
+    </block>
+  </view>
+  <button class='btn1' shape="circle" size="small" formType="submit">发送</button>
+</form>
+<!--<view class='bot'>leaf+出品</view>-->

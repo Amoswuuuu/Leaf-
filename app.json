@@ -6,12 +6,13 @@
     "pages/find/find",
     "pages/user/user",
     "pages/core/create/create",
-    "pages/core/add/add",
     "pages/core/help/help",
     "pages/core/userCtr/userCtr",
     "pages/core/about/about",
     "pages/core/search/search",
-    "pages/core/comment/comment"
+    "pages/core/comment/comment",
+    "pages/core/search/searchfind",
+    "pages/core/msg/msg"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,9 +22,9 @@
     "backgroundColor": "#fff"
   },
   "tabBar": {
-    "color": "#7f848a",
+    "color": "#ABCDEF",
     "selectedColor": "#4593D3",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#FFF",
     "list": [
       {
         "pagePath": "pages/index/index",

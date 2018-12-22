@@ -1,12 +1,21 @@
 /*index.wxss*/
 
-/*roundAvt*/
+#i_info{
+  background-color: white;
+  color: black;
+  font-size: 28rpx;
+  text-align: center;
+  white-space: 5rpx;
+}
 
+/*roundAvt*/
 .avt {
   display: flex;
   flex-direction: column;
   z-index: 12;
-  padding-top: 80rpx;
+  position: fixed;
+  top:200rpx;
+  /* padding-top: -8rpx; */
 }
 
 .avt image {
@@ -35,7 +44,7 @@
   box-shadow: 0rpx 5rpx 70rpx -10rpx #636e72;
   position: absolute;
   z-index: 10;
-  top: 300rpx;
+  top: 260rpx;
 }
 
 .cont text {
@@ -66,7 +75,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 650rpx 120rpx 0 0;
+  z-index: 11;
+  position: fixed;
+  top: 970rpx;
+  left: 520rpx;
   font-size: 10pt;
   color: #bbb;
 }

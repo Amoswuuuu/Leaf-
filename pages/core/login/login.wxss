@@ -1,3 +1,5 @@
+/* login.wxss */
+
 .loginBox {
   display: flex;
   flex-flow: column;
@@ -136,4 +138,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.bot {
+  border-top: 0.1ch solid #636e72;
+  bottom: 0;
+  width: 100%;
+  font-style: italic;
+  color: white;
+  background-color: #0072ff;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
 }

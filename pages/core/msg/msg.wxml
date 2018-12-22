@@ -1,0 +1,26 @@
+<!--msg.wxml-->
+
+
+<!--userCtrTop-->
+<view class='userCtrTop'>
+  <i-icon type="message" size="38" color="white" class='icon' />
+  <text class='userCtrTitle'>消息中心</text>
+  <text>「记录你在这里的每一刻」</text>
+</view>
+
+<!-- msgList -->
+
+<block wx:for="{{info}}">
+  <view class='usrInfoListBox'>
+    <view class='usrInfoList'>
+      <view class='htyinfo'>
+        {{item.maintext}}
+      </view>
+      <view class='other'>
+        <view id='tag'>Tag: {{item.type}}</view>
+        <view class='sendTime'>Time: {{item.t}}</view>
+        <view id='del' bindtap='del' id="{{item.id}}">删除</view>
+      </view>
+    </view>
+  </view>
+</block>

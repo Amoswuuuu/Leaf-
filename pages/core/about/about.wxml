@@ -1,3 +1,5 @@
+<!-- about.wxml -->
+
 <view class='aboutTop'>
   <i-icon type="prompt" size="38" color="white" class='icon' />
   <text class='aboutTopTitle'>关于Leaf+</text>

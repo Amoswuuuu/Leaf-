@@ -1,0 +1,41 @@
+<!-- searchfind.wxml -->
+
+<view class='findBox'>
+  <!--top-->
+  <view class='top'>
+    <image class='ico' src='/res/ico/search.png' bindtap='search' />
+    <image class='logo' src='/res/img/logoa.png' />
+    <image class='ico' src='/res/ico/create.png' bindtap='create' />
+  </view>
+  <view class='block'></view>
+  <!--infoList-->
+  <block wx:for="{{info}}" wx:key="info">
+    <view class='infoBox' bindtap='comment' id="{{item.id}}" data-title='{{item.maintext}}'>
+      <view class='line color3' id="{{item.id}}"></view>
+      <view class='row1' id="{{item.id}}">
+        <image src='/res/ico/my.png' id="{{item.id}}" />
+        <text id="{{item.id}}" class='infoContent'>{{item.name}}</text>
+        <view id="{{item.id}}" class='tag tcolor3'>
+          <text id="{{item.id}}">{{item.type}}</text>
+        </view>
+      </view>
+      <view class='row2' id="{{item.id}}">
+        <text id="infoContent1">{{item.maintext}}</text>
+      </view>
+      <view class='row3' id="{{item.id}}">
+        <text id="{{item.id}}">{{item.t}}</text>
+        <image id="{{item.id}}" src='/res/ico/comment.png' />
+        <text id="{{item.id}}">{{item.comment}}</text>
+        <view wx:if="{{item.condtion}}" class="zan">
+          <image src="/res/ico/like_i.png" id='{{item.id}}' class="img" catchtap='like' />
+          <text>{{item.zanshu}}</text>
+        </view>
+        <view wx:else class="zan">
+          <image src="/res/ico/like.png" id='{{item.id}}' class="img" catchtap='like' />
+          <text>{{item.zanshu}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <i-load-more tip="我也是有底线的 _φ(❐_❐✧  " loading="{{ false }}" />
+</view>

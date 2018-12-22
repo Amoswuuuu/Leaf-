@@ -1,5 +1,5 @@
-<!--pages/core/authorize/authorize.wxml-->
-<view class='authorize'>                                
-  <button class='btnlogin' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">让我们开始吧！</button>
+<!--authorize.wxml-->
+<view class='authorize'>
+  <button class='btnlogin' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">让我们开始吧</button>
 
 </view>

@@ -22,9 +22,18 @@
 
 .userid {
   padding-top: 40rpx;
-  padding-left: 310rpx;
-  font-size: 45rpx;
-  letter-spacing: 10rpx;
+  padding-left: 300rpx;
+  padding-bottom: 35rpx;
+  font-size: 40rpx;
+  width: 200rpx;
+  max-width: 200rpx;
+  max-height: 50rpx;
+  line-height: 90rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  letter-spacing: 5rpx;
   border-bottom: 1px black dashed;
   font-weight: 600;
   align-content: flex-end;

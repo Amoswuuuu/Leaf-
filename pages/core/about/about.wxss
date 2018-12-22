@@ -1,3 +1,5 @@
+/* about.wxss */
+
 .aboutTop {
   height: 240rpx;
   background: linear-gradient(45deg, #36d1dc, #5b86e5);
@@ -24,7 +26,7 @@
   padding: 20rpx;
 }
 
-.ab_t{
+.ab_t {
   color: #5b86e5;
 }
 

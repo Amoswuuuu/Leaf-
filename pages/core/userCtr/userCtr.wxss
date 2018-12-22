@@ -1,3 +1,5 @@
+/* userCtr.wxss */
+
 .userCtrTop {
   height: 240rpx;
   background: linear-gradient(45deg, #00c6ff, #0072ff);
@@ -62,17 +64,20 @@
   padding-left: 10rpx;
 }
 
-#date{
+#date {
   padding-left: 220rpx;
 }
 
-#usrid{
+#usrid {
   padding-left: 240rpx;
 }
 
-#btn{
-  padding-left: 270rpx;
+#btn {
   color: #0072ff;
+}
+
+#name{
+  width: 330rpx;
 }
 
 .userid {
@@ -83,7 +88,7 @@
   padding: 20rpx 0 0 20rpx;
 }
 
-.userid view{
+.userid view {
   padding-left: 10rpx;
 }
 
@@ -94,7 +99,7 @@
   padding: 20rpx 0 20rpx 20rpx;
 }
 
-.userName view{
+.userName view {
   padding-left: 10rpx;
 }
 
@@ -105,18 +110,18 @@
   padding: 20rpx 0 0 35rpx;
 }
 
-.other{
+.other {
   display: flex;
   flex-flow: row;
-  color:#636e72;
+  color: #636e72;
 }
 
-.other view{
+.other view {
   padding: 20rpx;
   font-size: 28rpx;
 }
 
-#tag{
+#tag {
   padding-left: 0;
 }
 
@@ -124,4 +129,3 @@
   color: #0072ff;
   padding-left: 80rpx;
 }
-

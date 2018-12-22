@@ -1,3 +1,5 @@
+<!-- search.wxml -->
+
 <!--top-->
 <view class='top'>
   <image class='ico' src='/res/ico/white.png' />
@@ -6,23 +8,23 @@
 </view>
 <view class="inputsearch">
   <!--<form bindsubmit="formSubmit" bindreset="formReset">-->
-  <input placeholder="搜索你想看到的内容" confirm-type="search" bindinput="inputoperation" value="{{inputsearch}}" />
+  <input placeholder="搜索你想看到的内容" confirm-type="search" bindinput="inputoperation" value="{{text}}" />
   <view class="close" hidden="{{isclose}}" bindtap="resetinput">X</view>
   <button formType="submit" class="searchsubmit" hidden="{{searchsubmit?true:false}}" bindtap="searchbegin">搜索</button>
-  <button formType="reset" class="searchreset" hidden="{{searchreset?true:false}}" bindtap="cancelsearch">取消</button>
+  <button formType="reset" class="searchreset" hidden="{{searchreset?true:false}}" bindtap="searchbegin">确定</button>
   <!--</form>-->
 </view>
 <!--历史记录-->
 <view class="history message" hidden="{{historydatashow?false:true}}">
   <view class="title">历史搜索</view>
-  <view class="operation">清除</view>
-  <text class="list" bindtap="gotodetail" wx:for="{{historydata}}" wx:key="list">{{item}}</text>
+  <view class="operation" bindtap='clear'>清除</view>
+  <text class="list" bindtap="gotodetail" wx:for="{{historydata}}" wx:key="list" id="{{item}}">{{item}}</text>
 </view>
 <!--热门搜索-->
 <view class="hotsearch message">
   <view class="title">热门搜索</view>
   <view class="operation" bindtap="changeother">换一批</view>
-  <text class="list" wx:for="{{falg ? hotsearch1 : hotsearch2}}" wx:key="list">{{item.message}}</text>
+  <text class="list" wx:for="{{falg ? hotsearch1 : hotsearch2}}" wx:key="list" id="{{item.message}}" bindtap='ch'>{{item.message}}</text>
 </view>
 <!--搜索结果-->
 <view class="searchresult" hidden="{{searchresult?false:true}}">

@@ -1,9 +1,11 @@
-/* pages/core/authorize/authorize.wxss */
+/* authorize.wxss */
 
 page {
-  height: 100%;
-  background: url(http://gxfwz36524.com/auth.png);
+  background: url(https://www.gxfwz36524.com/img/index.png);
   width: 750rpx;
+  height: 1334rpx;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
 }
 
 .authorize {
@@ -15,6 +17,7 @@ page {
   background-color: #0072ff;
   color: white;
   position: absolute;
-  left: 30%;
+  left: 33%;
   bottom: 100rpx;
+  box-shadow: 0rpx 5rpx 40rpx -10rpx #0072ff;
 }

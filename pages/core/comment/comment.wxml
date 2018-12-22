@@ -1,49 +1,42 @@
+<!--comment.wxml-->
+
 <view class='commentBox'>
+  <swiper class='scroll-view' indicator-dots="true" indicator-active-color='#0162B1' circular="true" autoplay='true' interval='2500'>
+    <block wx:for="{{imgUrls}}" wx:key="pro">
+      <swiper-item>
+        <image src="{{item}}" class="slide-img" bindtap='imgPre' />
+      </swiper-item>
+    </block>
+  </swiper>
   <view class='detail color1'>
-    <text>最温柔的月光也敌不过你转瞬的回眸最温柔的月光也敌不过你转瞬的回眸最温柔的月光也敌不过你转瞬的回眸\n最温柔的月光\n也敌不过\n你转瞬的回眸\n最温柔的月光\n也敌不过\n你转瞬的回眸\n</text>
-    <text id='userid'>——匿名</text>
-  </view>
-  <view class='cmt'>
-    <view class='commentList'>
-      <text>说的真好~</text>
-      <view class='icoBox'>
-        <image src='/res/ico/my.png' />
-        <view id='cmtid'>——匿名</view>
-      </view>
-    </view>
-    <view class='commentList'>
-      <text>说的真好~</text>
-      <view class='icoBox'>
-        <image src='/res/ico/my.png' />
-        <view id='cmtid'>——匿名</view>
-      </view>
-    </view>
-    <view class='commentList'>
-      <text>说的真好~</text>
-      <view class='icoBox'>
-        <image src='/res/ico/my.png' />
-        <view id='cmtid'>——匿名</view>
-      </view>
-    </view>
-    <view class='commentList'>
-      <text>说的真好~</text>
-      <view class='icoBox'>
-        <image src='/res/ico/my.png' />
-        <view id='cmtid'>——匿名</view>
-      </view>
-    </view>
-    <view class='commentList'>
-      <text>说的真好~</text>
-      <view class='icoBox'>
-        <image src='/res/ico/my.png' />
-        <view id='cmtid'>——匿名</view>
-      </view>
+    <text id='userid'>ID: {{name}}</text>
+    <text class="hint-content {{ellipsis?'ellipsis':'unellipsis'}}">{{title}}</text>
+    <view class='bg-ellipsis'>
+      <!-- <image class='img-ellipsis' src="{{ellipsis?'/res/ico/ellipsis.png':'/res/ico/unellipsis.png'}}"></image> -->
     </view>
   </view>
-</view>
-<view class='sendBox'>
-  <view class='sendComment'>
-    <input placeholder='添加评论...' confirm-type='send' cursor-spacing='10rpx' maxlength='40' />
-    <button class='sendBtn' size='mini'>发送</button>
-  </view>
+
+  <!-- <block wx:for="{{pic}}">
+  <image src='{{pic[index].path}}'></image>
+  </block> -->
+  <block wx:for="{{info}}">
+    <view class='cmt'>
+      <view class='commentList'>
+        <text>{{item.commentcontent}}</text>
+        <view class='icoBox'>
+          <image src='/res/ico/my.png' />
+          <view id='cmtid'>——{{item.commenter}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='line'></view>
+  <form bindsubmit="formSubmit">
+    <view class='sendBox'>
+      <view class='sendComment'>
+        <input placeholder='添加评论...' confirm-type='send' cursor-spacing='10rpx' name="comment" maxlength='40' />
+        <button formType="submit" class='sendBtn' size='mini'>发送</button>
+      </view>
+    </view>
+  </form>
 </view>

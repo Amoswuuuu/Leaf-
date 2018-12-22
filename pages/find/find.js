@@ -1,80 +1,22 @@
+// find.js
+
+var app = getApp().globalData
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    info: [{
-        id: '没有诗意的远方没有',
-        tag: '匿名表白',
-        tcolor: 'tcolor1',
-      content: '最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光，也敌不过你，转瞬的回眸,最温柔的月光',
-        date: '10-25 22:22',
-        comment: '233',
-        like: '666',
-        color: 'color1'
-      },
-      {
-        id: '支小推',
-        tag: '失物招领',
-        tcolor: 'tcolor2',
-        content: '在一教312教室第三排有一个iPhone XS Max',
-        date: '10-26 22:22',
-        comment: '3936',
-        like: '2333',
-        color: 'color2'
-      },
-      {
-        id: '小胖',
-        tag: '校园吐槽',
-        tcolor: 'tcolor3',
-        content: '一楼食堂大众快餐又涨价了！！！！',
-        date: '10-26 22:22',
-        comment: '2893',
-        like: '6666',
-        color: 'color3'
-      },
-      {
-        id: '匿名',
-        tag: '校园吐槽',
-        tcolor: 'tcolor3',
-        content: '最温柔的月光，也敌不过你，转瞬的\n回眸',
-        date: '10-26 22:22',
-        comment: '23',
-        like: '669',
-        color: 'color4'
-      },
-      {
-        id: '匿名',
-        tag: '匿名表白',
-        tcolor: 'tcolor1',
-        content: '最温柔的月光，也敌不过你，转瞬的\n回眸',
-        date: '10-26 22:22',
-        comment: '23',
-        like: '669',
-        color: 'color5'
-      },
-      {
-        id: '匿名',
-        tag: '校园吐槽',
-        tcolor: 'tcolor3',
-        content: '最温柔的月光，也敌不过你，转瞬的\n回眸',
-        date: '10-26 22:22',
-        comment: '23',
-        like: '669',
-        color: 'color6'
-      },
-      {
-        id: '匿名',
-        tag: '匿名表白',
-        tcolor: 'tcolor1',
-        content: '最温柔的月光，也敌不过你，转瞬的\n回眸',
-        date: '10-26 22:22',
-        comment: '23',
-        like: '669',
-        color: 'color7'
-      }
-    ]
+    list: [
+      { id: 0, 'type': 'nmbb', name: '匿名表白' },
+      { id: 1, 'type': 'xytc', name: '校园吐槽' },
+      { id: 2, 'type': 'swzl', name: '失物招领' },
+      { id: 3, 'type': 'jzxx', name: '兼职信息' },
+      { id: 4, 'type': 'tzsc', name: '跳蚤市场' },
+      // { id: 5, 'type': 'hdbm', name: '活动报名' }
+    ],
+    info: [],
+    img: '/res/ico/like.png'
   },
   search: function() {
     wx.navigateTo({
@@ -86,9 +28,74 @@ Page({
       url: '/pages/core/create/create',
     })
   },
-  comment:function(){
+  like: function(e) {
+    var that = this;
+    console.log(e.currentTarget.id)
+    console.log("dsads")
+    for (var i = 0; i < this.data.info.length; i++) {
+      if (this.data.info[i].id == e.currentTarget.id) {
+        var index = i;
+        break;
+      }
+    }
+    console.log(index)
+    var condtion = this.data.info[index].condtion;
+    var zanshu = this.data.info[index];
+    var infodata = this.data.info;
+    console.log(this.data.info[index].condtion)
+    if (this.data.info[index].condtion == undefined || this.data.info[index].condtion == false) {
+      this.data.info[index].condtion = true,
+        wx.request({
+          url: 'https://www.gxfwz36524.com/api/index/addzan',
+          data: {
+            id: e.currentTarget.id,
+            schoolnum: app.schoolnum,
+            name: app.nicename
+          },
+          method: 'POST',
+          header: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          success: function(e) {
+            console.log(zanshu)
+            zanshu.zanshu = e.data
+            console.log(infodata)
+            console.log(e)
+            that.setData({
+              info: infodata
+            })
+          }
+        })
+
+    } else {
+      this.data.info[index].condtion = false;
+      wx.request({
+        url: 'https://www.gxfwz36524.com/api/index/jianzan',
+        data: {
+          id: e.currentTarget.id,
+          schoolnum: app.schoolnum,
+          name: app.nicename
+        },
+        method: 'POST',
+        header: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        success: function(e) {
+
+          zanshu.zanshu = e.data
+          console.log(infodata)
+          console.log(e)
+          that.setData({
+            info: infodata
+          })
+        }
+      })
+    }
+  },
+  comment: function(e) {
+    console.log(e)
     wx.navigateTo({
-      url: '/pages/core/comment/comment',
+      url: '/pages/core/comment/comment?id=' + e.target.id,
     })
   },
   /**
@@ -109,6 +116,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
+    var that = this;
+    wx.request({
+      url: 'https://www.gxfwz36524.com/api/index/show',
+      method: 'GET',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data)
+        that.data.info = res.data;
+        that.setData({
+          info: res.data
+        })
+      }
+    })
 
   },
 
@@ -130,7 +152,23 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
-
+    //显示顶部刷新图标
+    wx.showNavigationBarLoading();
+    var that = this;
+    wx.request({
+      url: 'https://www.gxfwz36524.com/api/index/show',
+      method: 'GET',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data)
+        that.data.info = res.data;
+        that.setData({
+          info: res.data
+        })
+      }
+    })
   },
 
   /**

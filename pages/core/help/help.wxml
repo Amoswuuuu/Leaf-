@@ -1,3 +1,5 @@
+<!-- help.wxml -->
+
 <view class='helpTop'>
   <i-icon type="activity" size="38" color="white" class='icon' />
   <text class='helpTopTitle'>使用帮助</text>
@@ -32,6 +34,7 @@
     </view>
     <view class='h_content'>
       <text>在Leaf+中，几乎每个页面都有转发分享按钮，点击即可转发分享。也可依次点击右上角「···」>转发，即可转发分享。</text>
+      <text>Ps：转发热门页卡片会有小惊喜哟~</text>
     </view>
   </view>
   <view class='qstBox'>
@@ -43,12 +46,12 @@
       <text class='ctn'>进入微信页面，点击底部导航栏中的发现，点击小程序，找到Leaf+即可打开。</text>
       <text>4.2 通过微信-搜索打开</text>
       <text class='ctn'>进入微信页面，点击搜索图标，输入Leaf+即可打开。</text>
-      <text>4.1 通过微信公众号打开</text>
-      <text class='ctn'>关注 “汇华社区” 公众号，点击详情页面，找到关联的小程序——Leaf+即可打开。</text>
+      <!-- <text>4.1 通过微信公众号打开</text>
+      <text class='ctn'>关注 “汇华社区” 公众号，点击详情页面，找到关联的小程序——Leaf+即可打开。</text> -->
     </view>
   </view>
   <view class='h_content'>
     同时，若您或有朋友在管理与汇华学院相关公众号，「Leaf+」诚挚欢迎公众号关联小程序，并期待与您合作。（APPID：wx038026e857746120）
   </view>
 </view>
- <i-button size="primary" open-type='share'>分享Leaf+</i-button>
+<i-button size="primary" open-type='share'>分享Leaf+</i-button>

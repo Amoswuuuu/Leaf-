@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,9 +12,9 @@
 		"nodeModules": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.1",
-	"appid": "wx038026e857746120",
-	"projectname": "%E6%9C%A8%E5%8F%B6%E6%B1%87%E5%8D%8ELite",
+	"libVersion": "2.4.0",
+	"appid": "wx2efbd8e53dfbc57e",
+	"projectname": "%E6%9C%A8%E5%8F%B6%E6%B1%87%E5%8D%8ELeaf",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -37,12 +37,175 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 26,
 			"list": [
 				{
 					"id": -1,
 					"name": "sdsa",
-					"pathName": "pages/core/login/login"
+					"pathName": "pages/core/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsa ",
+					"pathName": "pages/core/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsa",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsa",
+					"pathName": "pages/core/comment/comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ds",
+					"pathName": "pages/core/userCtr/userCtr",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsa",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a1",
+					"pathName": "pages/core/userCtr/userCtr",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a122",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a121",
+					"pathName": "pages/core/comment/comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a123",
+					"pathName": "pages/core/comment/comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a124",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "12121",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "121212",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "121212",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "create",
+					"pathName": "pages/core/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "find",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "v",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "vv",
+					"pathName": "pages/core/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "vv",
+					"pathName": "pages/core/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "vv",
+					"pathName": "pages/core/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsd",
+					"pathName": "pages/core/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsd",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsd",
+					"pathName": "pages/core/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "dsd",
+					"pathName": "pages/core/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "find1",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": 26,
+					"name": "a0202",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "a0203",
+					"pathName": "pages/test/test",
+					"query": ""
 				}
 			]
 		}
